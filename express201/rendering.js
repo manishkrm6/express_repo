@@ -16,6 +16,10 @@ app.use(express.urlencoded({extended:false}));
 app.set('view engine', 'ejs');
 app.set('views',path.join(__dirname,'views'));
 
+app.get('/about', ( req, res, next ) => {
+  res.render("about",{});
+});
+
 app.get('/', ( req, res, next ) => {
   // The Data, in the 2nd argument will be appended into res.locals
   res.locals.validated = true;
