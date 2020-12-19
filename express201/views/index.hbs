@@ -1,1 +1,19 @@
 <h1> Welecome in Handlebars !</h1>
+
+The Received Message is : {{msg}}
+
+{{{html}}}
+
+{{#each countries }}
+    {{#unless this.isAsian }}
+    <li>{{this.name}} -- {{this.capital}}</li>
+    {{/unless}}
+{{/each}}
+
+{{! Country Name: {{country.name}} 
+{{! Country Capital: {{country.capital}} 
+
+<!-- Comments For HTML -->
+
+{{! --Comment in Handle Bars will not show in the browser }}
+

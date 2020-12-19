@@ -1,1 +1,28 @@
-<h1> Welcome in Pug World! </h1>
+doctype html
+html
+    head
+        title Pug Template Engine
+        script(src = "https://code.jquery.com/jquery-3.5.1.min.js")
+        link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css",rel="stylesheet")
+    body
+        h1 Rendered Pug File!
+        div 
+            This is a Message!
+            Another Message!
+        div.container
+            div.row
+                .col-sm-3 #{msg}
+                .col-sm-6 This is My Message ... #{msg2}
+            .row
+                .col-sm-3 !{html}
+                    each country in countries
+                        li=country.name + ' -- '+country.capital
+                        if country.isAsian
+                            div.asian This Country is Asian Country
+            div Message Of the day: 2+2 = #{2+2}
+
+                    
+
+
+        
+        
