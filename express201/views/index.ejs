@@ -1,0 +1,23 @@
+
+
+<h4><%= locals.msg; %></h4>
+<h5><%= validated; %></h5>
+
+<%- html; %>
+
+<%# It will not be shown %>
+
+
+
+<% let options = {"1" : "India", "2": "China" }; %>
+
+<select name="country">
+    <option value="none">--Select any Country--</option>
+    <%
+        for ( let key in options ){
+    %>
+            <option value="<%= key; %>"><%= options[key]; %> </option>        
+    
+    <% } %>
+
+</select>
