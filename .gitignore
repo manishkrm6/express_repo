@@ -1,4 +1,12 @@
 # Ignore Node Modules
 
+/ejsSite/node_modules
 /express101/node_modules
 /express201/node_modules
+/express301/node_modules
+/graphQLProject/node_modules
+/movieFanSite/node_modules
+/myNewExpressSite/node_modules
+
+
+
